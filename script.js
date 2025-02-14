@@ -11,14 +11,12 @@ const getSum = () => {
     total += parseInt(price.innerText);
     });
 
-	const table = document.querySelector("table");
+	const table1 = document.querySelector("table");
     const totalRow = document.createElement("tr");
-	 totalRow.id = "ans";
+	totalRow.id = "ans";
     totalRow.textContent = `Total Price:  ${total}`;
 	
-    table.appendChild(totalRow);
+    table1.append(totalRow);
 };
-
-
 getSumBtn.addEventListener("click", getSum);
 
