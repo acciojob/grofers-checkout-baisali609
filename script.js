@@ -13,8 +13,9 @@ const getSum = () => {
 
 	const table = document.querySelector("table");
     const totalRow = document.createElement("tr");
+	 totalRow.id = "ans";
     totalRow.textContent = `Total Price:  ${total}`;
-   
+	
     table.appendChild(totalRow);
 };
 
