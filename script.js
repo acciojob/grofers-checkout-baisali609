@@ -8,16 +8,13 @@ const getSum = () => {
     let total = 0;
     
     prices.forEach(price => {
-    total += parseFloat(price.textContent);
+    total += parseInt(price.innerText);
     });
 
 	const table = document.querySelector("table");
     const totalRow = document.createElement("tr");
-    const totalCell = document.createElement("td");
-    totalCell.textContent = `Total Price:  ${total}`;
-    totalRow.appendChild(totalCell);
-    
-    // Append total row to table
+    totalRow.textContent = `Total Price:  ${total}`;
+   
     table.appendChild(totalRow);
 };
 
